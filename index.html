@@ -1,160 +1,213 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>أحدث إطلاقات أورا | حجز وأسعار</title>
-<meta name="description" content="أحدث ٣ إطلاقات من أورا ديفلوبرز في مصر: جاردن في سولانا إيست، سيلفر باي وسيلفر ووك، فيلدج فيوز زيد ويست. سجّل واحجز.">
+<title>ORA Egypt | Latest Launches</title>
+<meta name="description" content="The latest three ORA Developers launches in Egypt: Gardinn at Solana East, Silver Bay and Silver Walk at Silversands, and Village Views at ZED West. Register your interest.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#1d1b18;--sand:#f6f1e9;--card:#fffdf9;--line:#e3d9c8;--gold:#a8844a;--deep:#2b2a26;--mut:#6f675b}
+:root{--ink:#2a2a2a;--black:#040707;--paper:#fffdf8;--soft:#fbf7ef;--sand:#ead9be;--mute:#5c5c5c;--hair:#c9c2b6;--accent:#f58a4b;--burnt:#ee6533}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:"Segoe UI",Tahoma,"Noto Naskh Arabic",Arial,sans-serif;background:var(--sand);color:var(--ink);line-height:1.8}
-.serif{font-family:Georgia,"Times New Roman",serif;letter-spacing:.04em}
-nav{position:sticky;top:0;z-index:5;background:rgba(246,241,233,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:14px 22px}
-nav b{font-size:20px}
-nav a.c{border:1px solid var(--ink);padding:6px 18px;border-radius:30px;font-size:14px;color:var(--ink);text-decoration:none;transition:.2s}
-nav a.c:hover{background:var(--ink);color:var(--sand)}
-.hero{min-height:82vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 22px;background:radial-gradient(circle at 20% 10%,#efe3cc 0,transparent 55%),radial-gradient(circle at 85% 90%,#e6d6b8 0,transparent 50%),var(--sand)}
-.hero small{color:var(--gold);letter-spacing:.3em;font-size:13px}
-.hero h1{font-size:clamp(38px,8vw,84px);font-weight:400;line-height:1.15;margin:18px 0}
-.hero p{max-width:520px;color:var(--mut);font-size:18px}
-.btn{display:inline-block;margin-top:30px;background:var(--deep);color:#fff;padding:14px 38px;border-radius:40px;text-decoration:none;font-size:16px;border:0;cursor:pointer;font-family:inherit;transition:.2s}
-.btn:hover{background:var(--gold)}
-section{padding:80px 22px;max-width:1100px;margin:auto}
-h2{font-size:clamp(28px,5vw,44px);font-weight:400;text-align:center}
-.sub{text-align:center;color:var(--mut);margin:8px 0 46px}
-.grid{display:grid;gap:26px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
-.card{background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;transition:.25s}
-.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(60,45,20,.12)}
-.art{height:200px;position:relative;display:flex;align-items:flex-end;padding:18px;color:#fff}
-.a1{background:linear-gradient(135deg,#3f5a43,#9fb48f)}
-.a2{background:linear-gradient(135deg,#1f4d5c,#8ec3c9)}
-.a3{background:linear-gradient(135deg,#7a5b33,#d7bb8a)}
-.art span{font-size:12px;letter-spacing:.2em;border:1px solid rgba(255,255,255,.7);padding:2px 12px;border-radius:20px;position:absolute;top:16px;right:16px}
-.art h3{font-size:28px;font-weight:400}
-.body{padding:24px;flex:1;display:flex;flex-direction:column}
-.loc{color:var(--gold);font-size:14px}
-.body p{color:var(--mut);margin:8px 0 14px;font-size:15px}
-.kv{border-top:1px solid var(--line);margin-top:auto}
-.kv div{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
-.kv div span:first-child{color:var(--mut)}
-.kv b{font-weight:600}
-.card a.m{margin-top:18px;text-align:center;border:1px solid var(--ink);color:var(--ink);padding:10px;border-radius:30px;text-decoration:none;font-size:15px;transition:.2s}
-.card a.m:hover{background:var(--ink);color:#fff}
-.note{font-size:12px;color:var(--mut);text-align:center;margin-top:26px}
-.why{background:var(--deep);color:#f3ece0;max-width:none}
-.why .in{max-width:1000px;margin:auto;display:grid;gap:30px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));text-align:center}
-.why h2{color:#fff;margin-bottom:40px}
-.why .n{font-size:44px;color:#d8b97d}
-.why p{font-size:15px;color:#d5cbb9}
-.formwrap{max-width:520px;margin:auto;background:var(--card);border:1px solid var(--line);padding:34px 28px;border-radius:6px}
-label{display:block;font-size:14px;margin-bottom:6px;color:var(--mut)}
-input[type=text],input[type=tel],input:not([type]){width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:4px;font-size:16px;font-family:inherit;background:#fff;margin-bottom:18px}
-input:focus{outline:2px solid var(--gold);border-color:var(--gold)}
-.units{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
-.units label{margin:0;cursor:pointer}
+body{font-family:"Lexend",system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;font-weight:300;letter-spacing:.009em}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1320px;margin:auto;padding:0 40px}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;height:56px;background:var(--black);display:flex;align-items:center;justify-content:space-between;padding:0 40px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand img{height:22px;width:auto}
+.brand i{width:1px;height:12px;background:#777}
+.brand span{font-size:11px;letter-spacing:.3em;color:#9a9a9a;text-transform:uppercase}
+.links{display:flex;gap:36px}
+.links a{color:#fff;text-decoration:none;font-size:14px;font-weight:400}
+.links a:hover{color:var(--accent)}
+.pill{border:1px solid #fff;color:#fff;text-decoration:none;font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:9px 20px;border-radius:9999px;transition:.2s;font-weight:400}
+.pill:hover{background:#fff;color:var(--black)}
+.hero{position:relative;height:100vh;min-height:620px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background:#222 url(https://d1nclmzht2jx0v.cloudfront.net/media/ee1a292f-60a9-455d-a2c9-098bae5c4cec/1440.webp) center/cover}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(4,7,7,.55),rgba(4,7,7,.45) 50%,rgba(4,7,7,.75))}
+.hero .in{position:relative;padding:0 24px;max-width:900px}
+.hero .w{font-size:clamp(22px,3.4vw,38px);letter-spacing:.08em;text-transform:uppercase;font-weight:400;opacity:.9}
+.hero img{height:clamp(60px,10vw,110px);width:auto;margin:22px auto 8px}
+.hero .eg{font-size:20px;opacity:.85}
+.hero p{margin:30px auto 0;max-width:560px;font-size:18px;opacity:.9}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-size:13px;letter-spacing:.12em;text-transform:uppercase;padding:15px 34px;border-radius:5px;border:0;cursor:pointer;font-family:inherit;font-weight:400;transition:.2s}
+.btn:hover{background:var(--burnt)}
+.hero .btn{margin-top:34px}
+.eyebrow{display:flex;align-items:center;gap:14px;font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--mute);font-weight:400}
+.eyebrow:before{content:"";width:26px;height:1px;background:var(--accent)}
+.eyebrow.d{color:#d9c9ac}
+.about{background:var(--soft);padding:110px 0}
+.about .g{display:grid;grid-template-columns:1fr 1.2fr;gap:70px;align-items:center}
+.about .ph{aspect-ratio:4/5;background:#ead9be url(https://d1nclmzht2jx0v.cloudfront.net/media/3202e0ed-2507-4013-b79c-f3015ee5ab15/1440.webp) center/cover;border-radius:2px}
+.about h2{font-size:clamp(30px,4vw,54px);line-height:1.2;font-weight:300;margin-bottom:28px}
+.about p{color:var(--mute);max-width:560px;margin-top:22px}
+.stats{background:var(--ink);color:#fff;padding:70px 0}
+.stats .g{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.stats .n{font-size:clamp(40px,5vw,60px);font-weight:300;line-height:1.1}
+.stats .l{margin-top:14px}
+.launches{padding:110px 0 120px}
+.launches h2{font-size:clamp(34px,4.5vw,60px);font-weight:300;line-height:1.15;margin:18px 0 14px}
+.launches .sub{color:var(--mute);max-width:430px;margin-bottom:60px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{display:flex;flex-direction:column}
+.media{position:relative;aspect-ratio:4/5;overflow:hidden;background:#ddd}
+.media img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.25,.46,.45,.94)}
+.card:hover .media img{transform:scale(1.04)}
+.tag{position:absolute;top:16px;left:16px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#fff;background:rgba(40,40,40,.65);padding:5px 12px;font-weight:400}
+.loc{position:absolute;bottom:16px;left:20px;right:20px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#fff;font-weight:400;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.card h3{font-size:26px;font-weight:400;margin:26px 0 10px;text-align:center}
+.card p{color:var(--mute);font-size:14px;margin-bottom:20px;min-height:66px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px;border-top:1px solid var(--hair);padding-top:20px}
+.facts b{display:block;font-weight:400;font-size:17px;color:var(--ink)}
+.facts span{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.card a.v{margin-top:22px;align-self:flex-start;color:var(--accent);text-decoration:none;font-size:11px;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid var(--accent);padding-bottom:3px;font-weight:400}
+.reg{background:var(--soft);padding:110px 0}
+.reg .g{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.reg h2{font-size:clamp(32px,4vw,52px);font-weight:300;line-height:1.15;margin:18px 0 20px}
+.reg .t{color:var(--mute);max-width:420px}
+.reg .c{margin-top:34px;font-size:15px}
+.reg .c a{color:var(--ink)}
+form{background:var(--paper);border:1px solid var(--sand);padding:36px;border-radius:5px}
+label.t2{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);margin-bottom:8px;font-weight:400}
+input.i,select.i{width:100%;padding:13px 14px;border:1px solid var(--hair);border-radius:4px;font-size:15px;font-family:"Inter",system-ui,sans-serif;background:#fff;margin-bottom:22px;color:var(--ink)}
+input.i:focus,select.i:focus{outline:2px solid var(--accent);border-color:var(--accent)}
+.units{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.units label{cursor:pointer}
 .units input{display:none}
-.units span{display:block;border:1px solid var(--line);padding:7px 16px;border-radius:30px;font-size:14px;color:var(--ink);background:#fff}
-.units input:checked+span{background:var(--deep);color:#fff;border-color:var(--deep)}
-.err{display:none;color:#b3261e;font-size:14px;margin-bottom:12px}
-.ok{display:none;text-align:center;font-size:24px;padding:30px 0}
-.wa{text-align:center;margin-top:18px;font-size:14px;color:var(--mut)}
-.wa a{color:var(--gold)}
-footer{text-align:center;padding:36px 22px;font-size:13px;color:var(--mut);border-top:1px solid var(--line)}
-.fab{position:fixed;bottom:18px;left:18px;background:#25d366;color:#fff;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:6}
+.units span{display:block;border:1px solid var(--hair);padding:8px 18px;border-radius:9999px;font-size:13px;background:#fff}
+.units input:checked+span{background:var(--ink);color:#fff;border-color:var(--ink)}
+.err{display:none;color:#b3261e;font-size:14px;margin-bottom:14px}
+.ok{display:none;text-align:center;font-size:24px;padding:50px 0}
+form .btn{width:100%}
+.wa{text-align:center;margin-top:18px;font-size:14px;color:var(--mute)}
+.wa a{color:var(--accent)}
+footer{background:var(--ink);color:#d8d3c8;padding:70px 0 34px}
+footer .g{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px}
+footer img{height:32px;width:auto;margin-bottom:18px}
+footer p{font-size:14px;color:#a9a49a;max-width:360px}
+footer h4{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#d9c9ac;margin-bottom:18px;font-weight:500}
+footer li{list-style:none;margin-bottom:10px;font-size:14px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--accent)}
+.disc{margin-top:50px;border-top:1px solid #4a4a4a;padding-top:24px;font-size:13px;line-height:1.7;color:#e6e0d4}
+.disc b{font-weight:500;color:#fff}
+.side{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:15;display:flex;flex-direction:column;background:var(--accent);border-radius:8px 0 0 8px;overflow:hidden}
+.side a{color:#fff;text-decoration:none;font-size:9px;letter-spacing:.12em;text-transform:uppercase;text-align:center;padding:16px 10px;width:62px;border-bottom:1px solid rgba(255,255,255,.35);font-weight:400}
+.side a:last-child{border:0}
+@media(max-width:900px){
+ nav{padding:0 18px}.links{display:none}.brand span{display:none}.wrap{padding:0 22px}
+ .about .g,.reg .g,.cards,footer .g{grid-template-columns:1fr}.about .g{gap:40px}.stats .g{grid-template-columns:1fr 1fr}
+ .about,.launches,.reg{padding:70px 0}.side a{padding:12px 6px;width:50px;font-size:8px}
+}
 </style>
 </head>
 <body>
-<nav><b class="serif">ORA · LAUNCHES</b><a class="c" href="#reg">سجّل اهتمامك</a></nav>
+<nav>
+ <a class="brand" href="#top"><img src="https://www.ora-egypt.com/logo-ora-white.png" alt="ORA"><i></i><span>Reimagining Time</span></a>
+ <div class="links"><a href="#about">About</a><a href="#launches">Latest Launches</a><a href="#register">Contact</a></div>
+ <a class="pill" href="#register">Register Interest</a>
+</nav>
 
-<header class="hero">
-<small class="serif">NEW LAUNCHES</small>
-<h1 class="serif">Reimagining Time</h1>
-<p>أحدث ٣ إطلاقات من أورا ديفلوبرز في مصر. أسعار البداية، الأقساط، ومعاينة فورية.</p>
-<a class="btn" href="#launches">شوف الإطلاقات</a>
+<header class="hero" id="top">
+ <div class="in">
+  <div class="w">Welcome to</div>
+  <img src="https://www.ora-egypt.com/logo-ora-white.png" alt="ORA">
+  <div class="eg">Egypt</div>
+  <p>Discover the three newest ORA launches and register your interest with a personal advisor.</p>
+  <a class="btn" href="#launches">View the launches</a>
+ </div>
 </header>
 
-<section id="launches">
-<h2 class="serif">Latest Launches</h2>
-<p class="sub">أحدث الإطلاقات بأسعار البداية المعلنة</p>
-<div class="grid">
-
-<div class="card">
-<div class="art a1"><span class="serif">NOW LAUNCHING</span><h3 class="serif">Gardinn</h3></div>
-<div class="body">
-<div class="loc">Solana East · القاهرة الجديدة</div>
-<p>شقق فندقية متشطبة بالكامل بإدارة أورا للضيافة، على طريق التسعين الجنوبي. ٩٨٪ من الوحدات بإطلالات خضراء.</p>
-<div class="kv">
-<div><span>غرفة نوم</span><b>من ٨.٩ مليون</b></div>
-<div><span>غرفتين</span><b>من ١٣.٩ مليون</b></div>
-<div><span>٣ غرف + غرفة خادمة</span><b>من ١٨ مليون</b></div>
-<div><span>السداد</span><b>٥٪ مقدم · حتى ٩ سنين</b></div>
-</div>
-<a class="m" href="#reg">اطلب التفاصيل</a>
-</div></div>
-
-<div class="card">
-<div class="art a2"><span class="serif">LAGOON · PROMENADE</span><h3 class="serif">Silver Bay &amp; Silver Walk</h3></div>
-<div class="body">
-<div class="loc">Silversands · الساحل الشمالي</div>
-<p>Silver Bay: كبائن على اللاجون مباشرة. Silver Walk: ممشى على المياه بمطاعم وكافيهات وشقق متشطبة بالتكييفات.</p>
-<div class="kv">
-<div><span>Silver Walk · غرفة نوم</span><b>من ٨.٩ مليون</b></div>
-<div><span>Silver Walk · ٣ غرف</span><b>من ٢٣ مليون</b></div>
-<div><span>Silver Bay · كابانا</span><b>من ١٥.٦ مليون</b></div>
-<div><span>السداد</span><b>٥٪ مقدم · حتى ٨ سنين</b></div>
-</div>
-<a class="m" href="#reg">اطلب التفاصيل</a>
-</div></div>
-
-<div class="card">
-<div class="art a3"><span class="serif">NEW PHASE</span><h3 class="serif">Village Views</h3></div>
-<div class="body">
-<div class="loc">ZED West · الشيخ زايد</div>
-<p>آخر أبراج ZED West، بإطلالة مباشرة على حديقة زد المركزية (٦٥ فدان) في قلب الشيخ زايد.</p>
-<div class="kv">
-<div><span>غرفة نوم</span><b>من ٩.٥ مليون</b></div>
-<div><span>غرفتين</span><b>من ١٦.٥ مليون</b></div>
-<div><span>٣ غرف</span><b>من ٢٢ مليون</b></div>
-<div><span>السداد</span><b>٥٪ مقدم · حتى ١٠ سنين</b></div>
-</div>
-<a class="m" href="#reg">اطلب التفاصيل</a>
-</div></div>
-
-</div>
-<p class="note">أسعار البداية حسب الإعلانات المنشورة وقت التحديث، وتتغير حسب الوحدة والدور والمساحة. اطلب الجدول الحالي.</p>
-</section>
-
-<section class="why" style="padding:70px 22px"><div class="in" style="max-width:1000px">
-<div><div class="n serif">٥٪</div><p>مقدم حجز في أغلب الإطلاقات</p></div>
-<div><div class="n serif">٩–١٠</div><p>سنين تقسيط حسب المشروع</p></div>
-<div><div class="n serif">٣</div><p>إطلاقات جديدة، أرقام محدودة</p></div>
+<section class="about" id="about"><div class="wrap g">
+ <div class="ph"></div>
+ <div>
+  <h2>With passion we build, with commitment we develop, and with heart we deliver.</h2>
+  <div class="eyebrow">ORA Developers · Egypt</div>
+  <p>ORA is a multinational developer that treats every destination as a finely engineered timepiece, designed for harmony, built for everyday joy and delivered with heart. This page presents its three latest launches in Egypt, from New Cairo to Sheikh Zayed and the North Coast.</p>
+ </div>
 </div></section>
 
-<section id="reg">
-<h2 class="serif">Register Your Interest</h2>
-<p class="sub">سيب بياناتك وهنكلمك بالتفاصيل والأسعار الحالية</p>
-<div class="formwrap">
-<form id="f" novalidate>
-<div><label>الاسم</label><input name="entry.2108316533" autocomplete="name" placeholder="اسمك"></div>
-<div><label>رقم الموبايل *</label><input name="entry.1979713201" type="tel" inputmode="tel" autocomplete="tel" required placeholder="01xxxxxxxxx"></div>
-<div><label>نوع الوحدة</label><div class="units">
-<label><input type="radio" name="entry.1307640494" value="شقة"><span>شقة</span></label>
-<label><input type="radio" name="entry.1307640494" value="فيلا"><span>فيلا</span></label>
-<label><input type="radio" name="entry.1307640494" value="دوبلكس"><span>دوبلكس</span></label>
-<label><input type="radio" name="entry.1307640494" value="لسه بحدد"><span>لسه بحدد</span></label></div></div>
-<div><label>الميزانية التقريبية (جنيه)</label><input name="entry.609252050" inputmode="numeric" placeholder="مثال: 10,000,000"></div>
-<div class="err" id="err">اكتب رقم موبايل صحيح</div>
-<button class="btn" style="width:100%;margin-top:0" type="submit" id="sb">أرسل طلبك</button>
-<div class="wa">أو كلمنا على <a href="https://wa.me/201500062636?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%D8%8C%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D8%A5%D8%B7%D9%84%D8%A7%D9%82%D8%A7%D8%AA%20%D8%A3%D9%88%D8%B1%D8%A7%20%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9.%20%D9%85%D9%85%D9%83%D9%86%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%D8%9F">واتساب</a> · <a href="tel:+201500062636">٠١٥٠٠٠٦٢٦٣٦</a></div>
-</form>
-<div class="ok" id="ok">تم الاستلام ✅<br><span style="font-size:16px;color:var(--mut)">هنتواصل معاك قريباً</span></div>
-</div>
-</section>
+<section class="stats"><div class="wrap g">
+ <div><div class="n">3</div><div class="eyebrow d l">Latest launches</div></div>
+ <div><div class="n">3</div><div class="eyebrow d l">Destinations across Egypt</div></div>
+ <div><div class="n">2026</div><div class="eyebrow d l">Newest releases</div></div>
+</div></section>
 
-<footer>Abraam Hany · للحجز والاستفسار: <a href="https://wa.me/201500062636" style="color:var(--gold)">واتساب 01500062636</a><br>صفحة تسويقية مستقلة، وليست الموقع الرسمي لأورا ديفلوبرز.</footer>
-<a class="fab" href="https://wa.me/201500062636" aria-label="WhatsApp">✆</a>
+<section class="launches" id="launches"><div class="wrap">
+ <div class="eyebrow">Portfolio</div>
+ <h2>Latest Launches</h2>
+ <p class="sub">Discover the newest ORA destinations, each a singular study in proportion, climate and quiet luxury.</p>
+ <div class="cards">
+
+  <article class="card">
+   <div class="media"><img src="https://d1nclmzht2jx0v.cloudfront.net/media/c907e0d8-d230-4adc-b31a-8a2f25ae6fab/960.webp" alt="Gardinn at Solana East" loading="lazy"><span class="tag">Now launching</span><span class="loc">Solana East · New Cairo</span></div>
+   <h3>Gardinn</h3>
+   <p>Fully finished serviced apartments managed by ORA Hospitality, set among landscaped greenery on the South 90th Street.</p>
+   <div class="facts"><div><b>167</b><span>Acres</span></div><div><b>Sep 2026</b><span>Launched</span></div><div><b>98%</b><span>Units with views</span></div><div><b>Serviced</b><span>Apartments</span></div></div>
+   <a class="v" href="#register">Register interest →</a>
+  </article>
+
+  <article class="card">
+   <div class="media"><img src="https://d1nclmzht2jx0v.cloudfront.net/media/a44978da-ce0c-449d-88d7-a637c3f073df/960.webp" alt="Silver Bay and Silver Walk at Silversands" loading="lazy"><span class="tag">Waterfront</span><span class="loc">Silversands · North Coast</span></div>
+   <h3>Silver Bay &amp; Silver Walk</h3>
+   <p>Lagoon-front cabanas and a waterfront promenade of apartments, restaurants and cafes, fully finished with air conditioning.</p>
+   <div class="facts"><div><b>Jul 2026</b><span>Launched</span></div><div><b>Lagoon</b><span>Front living</span></div><div><b>Finished</b><span>Ready to enjoy</span></div><div><b>Beach</b><span>Direct access</span></div></div>
+   <a class="v" href="#register">Register interest →</a>
+  </article>
+
+  <article class="card">
+   <div class="media"><img src="https://d1nclmzht2jx0v.cloudfront.net/media/84ca7602-34f8-46c2-9e3a-82b3acf88720/960.webp" alt="Village Views at ZED West" loading="lazy"><span class="tag">New phase</span><span class="loc">ZED West · Sheikh Zayed</span></div>
+   <h3>Village Views</h3>
+   <p>The final tower of ZED West, overlooking the 65-acre central park in the heart of Sheikh Zayed.</p>
+   <div class="facts"><div><b>Feb 2026</b><span>Launched</span></div><div><b>65 acres</b><span>Central park</span></div><div><b>Apartments</b><span>Lofts, duplexes</span></div><div><b>Park view</b><span>Direct</span></div></div>
+   <a class="v" href="#register">Register interest →</a>
+  </article>
+
+ </div>
+</div></section>
+
+<section class="reg" id="register"><div class="wrap g">
+ <div>
+  <div class="eyebrow">Register Interest</div>
+  <h2>Speak with an advisor.</h2>
+  <p class="t">Leave your details and we will call you with availability, floor plans and payment options for the launch you like.</p>
+  <div class="c">WhatsApp: <a href="https://wa.me/201500062636">+20 150 006 2636</a><br>Phone: <a href="tel:+201500062636">01500062636</a></div>
+ </div>
+ <div>
+ <form id="f" novalidate>
+  <label class="t2">Name</label>
+  <input class="i" id="nm" name="entry.2108316533" autocomplete="name" placeholder="Your name">
+  <label class="t2">Mobile number *</label>
+  <input class="i" name="entry.1979713201" type="tel" inputmode="tel" autocomplete="tel" required placeholder="01xxxxxxxxx">
+  <label class="t2">Launch of interest</label>
+  <select class="i" id="pj"><option>Gardinn, Solana East</option><option>Silver Bay &amp; Silver Walk, Silversands</option><option>Village Views, ZED West</option><option>Not sure yet</option></select>
+  <label class="t2">Unit type</label>
+  <div class="units">
+   <label><input type="radio" name="entry.1307640494" value="شقة"><span>Apartment</span></label>
+   <label><input type="radio" name="entry.1307640494" value="فيلا"><span>Villa</span></label>
+   <label><input type="radio" name="entry.1307640494" value="دوبلكس"><span>Duplex</span></label>
+   <label><input type="radio" name="entry.1307640494" value="لسه بحدد"><span>Not sure yet</span></label>
+  </div>
+  <div class="err" id="err">Please enter a valid mobile number</div>
+  <button class="btn" type="submit" id="sb">Send request</button>
+  <div class="wa">Or message us on <a href="https://wa.me/201500062636?text=Hello%2C%20I%20am%20interested%20in%20the%20latest%20ORA%20launches.%20Could%20we%20talk%3F">WhatsApp</a></div>
+ </form>
+ <div class="ok" id="ok">Request received ✅<br><span style="font-size:15px;color:var(--mute)">We will contact you shortly.</span></div>
+ </div>
+</div></section>
+
+<footer><div class="wrap">
+ <div class="g">
+  <div><img src="https://www.ora-egypt.com/logo-ora-white.png" alt="ORA"><p>ORA Developers, reimagining time through place.</p></div>
+  <div><h4>Destinations</h4><ul><li>Solana East</li><li>Silversands</li><li>ZED West</li></ul></div>
+  <div><h4>Contact</h4><ul><li>Abraam Hany</li><li><a href="https://wa.me/201500062636">WhatsApp 01500062636</a></li><li><a href="#register">Register interest</a></li></ul></div>
+ </div>
+ <div class="disc"><b>Independent marketing page.</b> This is not the official ORA Developers website and is operated by Abraam Hany, an independent sales contact. ORA, its logo and project imagery belong to ORA Developers. Details and availability are subject to change; please confirm with a sales advisor.</div>
+</div></footer>
+
+<div class="side"><a href="#register">Register<br>Interest</a><a href="https://wa.me/201500062636">Chat<br>WhatsApp</a><a href="tel:+201500062636">Call<br>Us</a></div>
 
 <script>
 var URL_="https://docs.google.com/forms/d/e/1FAIpQLScV9EPwGx02_61QbOzzY5iICqAdQTHfBji_AcjhD7eQ6TovPw/formResponse";
@@ -162,12 +215,13 @@ document.getElementById("f").addEventListener("submit",function(e){
  e.preventDefault();var f=e.target,ph=f.elements["entry.1979713201"].value.replace(/[^0-9+]/g,"");
  if(ph.length<8){document.getElementById("err").style.display="block";return}
  document.getElementById("err").style.display="none";
- var b=document.getElementById("sb");b.disabled=true;b.textContent="جاري الإرسال...";
+ var b=document.getElementById("sb");b.disabled=true;b.textContent="Sending...";
  var d=new URLSearchParams(new FormData(f));
- d.set("entry.2108316533","[ORA] "+(f.elements["entry.2108316533"].value||""));
+ var pj=document.getElementById("pj").value.split(",")[0];
+ d.set("entry.2108316533","[ORA] ["+pj+"] "+(document.getElementById("nm").value||""));
  fetch(URL_,{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:d.toString()})
  .then(function(){f.style.display="none";document.getElementById("ok").style.display="block"})
- .catch(function(){b.disabled=false;b.textContent="أرسل طلبك";var x=document.getElementById("err");x.textContent="حصل خطأ، جرّب واتساب";x.style.display="block"});
+ .catch(function(){b.disabled=false;b.textContent="Send request";var x=document.getElementById("err");x.textContent="Something went wrong, please try WhatsApp";x.style.display="block"});
 });
 </script>
 </body></html>
