@@ -127,7 +127,6 @@ nav.s{height:48px;background:rgba(4,7,7,.92);backdrop-filter:blur(10px);box-shad
 .card h3{transition:color .3s}.card:hover h3{color:var(--accent)}
 .card a.v{transition:letter-spacing .35s,color .3s,border-color .3s}
 .card a.v:hover{letter-spacing:.26em;color:var(--burnt);border-color:var(--burnt)}
-.about .ph{transition:transform 1.2s cubic-bezier(.22,.61,.36,1)}
 input.i,select.i{transition:border-color .3s,box-shadow .3s}
 input.i:focus,select.i:focus{box-shadow:0 0 0 4px rgba(245,138,75,.15);outline:none}
 .units span{transition:all .25s}.units label:hover span{border-color:var(--ink)}
@@ -257,6 +256,7 @@ footer a{transition:color .3s}
  var nav=d.querySelector("nav"),bg=d.getElementById("hbg"),hin=d.getElementById("hin"),tick=false;
  function upd(){var y=window.scrollY;nav.classList.toggle("s",y>40);
   if(!rm&&y<window.innerHeight*1.2){bg.style.transform="translate3d(0,"+(y*.25)+"px,0)";hin.style.transform="translate3d(0,"+(y*.12)+"px,0)";hin.style.opacity=Math.max(0,1-y/(window.innerHeight*.8))}
+  d.querySelectorAll(".rv:not(.in)").forEach(function(el){var r=el.getBoundingClientRect();if(r.top<window.innerHeight*.92&&r.bottom>0){el.classList.add("in");if(el.querySelector&&el.querySelector("[data-c]"))count(el)}});
   tick=false}
  window.addEventListener("scroll",function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
  d.querySelectorAll(".about .ph").forEach(function(p){p.style.willChange="auto"});
