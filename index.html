@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>أحدث إطلاقات أورا | حجز وأسعار</title>
+<meta name="description" content="أحدث ٣ إطلاقات من أورا ديفلوبرز في مصر: جاردن في سولانا إيست، سيلفر باي وسيلفر ووك، فيلدج فيوز زيد ويست. سجّل واحجز.">
+<style>
+:root{--ink:#1d1b18;--sand:#f6f1e9;--card:#fffdf9;--line:#e3d9c8;--gold:#a8844a;--deep:#2b2a26;--mut:#6f675b}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",Tahoma,"Noto Naskh Arabic",Arial,sans-serif;background:var(--sand);color:var(--ink);line-height:1.8}
+.serif{font-family:Georgia,"Times New Roman",serif;letter-spacing:.04em}
+nav{position:sticky;top:0;z-index:5;background:rgba(246,241,233,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:14px 22px}
+nav b{font-size:20px}
+nav a.c{border:1px solid var(--ink);padding:6px 18px;border-radius:30px;font-size:14px;color:var(--ink);text-decoration:none;transition:.2s}
+nav a.c:hover{background:var(--ink);color:var(--sand)}
+.hero{min-height:82vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 22px;background:radial-gradient(circle at 20% 10%,#efe3cc 0,transparent 55%),radial-gradient(circle at 85% 90%,#e6d6b8 0,transparent 50%),var(--sand)}
+.hero small{color:var(--gold);letter-spacing:.3em;font-size:13px}
+.hero h1{font-size:clamp(38px,8vw,84px);font-weight:400;line-height:1.15;margin:18px 0}
+.hero p{max-width:520px;color:var(--mut);font-size:18px}
+.btn{display:inline-block;margin-top:30px;background:var(--deep);color:#fff;padding:14px 38px;border-radius:40px;text-decoration:none;font-size:16px;border:0;cursor:pointer;font-family:inherit;transition:.2s}
+.btn:hover{background:var(--gold)}
+section{padding:80px 22px;max-width:1100px;margin:auto}
+h2{font-size:clamp(28px,5vw,44px);font-weight:400;text-align:center}
+.sub{text-align:center;color:var(--mut);margin:8px 0 46px}
+.grid{display:grid;gap:26px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;transition:.25s}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(60,45,20,.12)}
+.art{height:200px;position:relative;display:flex;align-items:flex-end;padding:18px;color:#fff}
+.a1{background:linear-gradient(135deg,#3f5a43,#9fb48f)}
+.a2{background:linear-gradient(135deg,#1f4d5c,#8ec3c9)}
+.a3{background:linear-gradient(135deg,#7a5b33,#d7bb8a)}
+.art span{font-size:12px;letter-spacing:.2em;border:1px solid rgba(255,255,255,.7);padding:2px 12px;border-radius:20px;position:absolute;top:16px;right:16px}
+.art h3{font-size:28px;font-weight:400}
+.body{padding:24px;flex:1;display:flex;flex-direction:column}
+.loc{color:var(--gold);font-size:14px}
+.body p{color:var(--mut);margin:8px 0 14px;font-size:15px}
+.kv{border-top:1px solid var(--line);margin-top:auto}
+.kv div{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
+.kv div span:first-child{color:var(--mut)}
+.kv b{font-weight:600}
+.card a.m{margin-top:18px;text-align:center;border:1px solid var(--ink);color:var(--ink);padding:10px;border-radius:30px;text-decoration:none;font-size:15px;transition:.2s}
+.card a.m:hover{background:var(--ink);color:#fff}
+.note{font-size:12px;color:var(--mut);text-align:center;margin-top:26px}
+.why{background:var(--deep);color:#f3ece0;max-width:none}
+.why .in{max-width:1000px;margin:auto;display:grid;gap:30px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));text-align:center}
+.why h2{color:#fff;margin-bottom:40px}
+.why .n{font-size:44px;color:#d8b97d}
+.why p{font-size:15px;color:#d5cbb9}
+.formwrap{max-width:520px;margin:auto;background:var(--card);border:1px solid var(--line);padding:34px 28px;border-radius:6px}
+label{display:block;font-size:14px;margin-bottom:6px;color:var(--mut)}
+input[type=text],input[type=tel],input:not([type]){width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:4px;font-size:16px;font-family:inherit;background:#fff;margin-bottom:18px}
+input:focus{outline:2px solid var(--gold);border-color:var(--gold)}
+.units{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.units label{margin:0;cursor:pointer}
+.units input{display:none}
+.units span{display:block;border:1px solid var(--line);padding:7px 16px;border-radius:30px;font-size:14px;color:var(--ink);background:#fff}
+.units input:checked+span{background:var(--deep);color:#fff;border-color:var(--deep)}
+.err{display:none;color:#b3261e;font-size:14px;margin-bottom:12px}
+.ok{display:none;text-align:center;font-size:24px;padding:30px 0}
+.wa{text-align:center;margin-top:18px;font-size:14px;color:var(--mut)}
+.wa a{color:var(--gold)}
+footer{text-align:center;padding:36px 22px;font-size:13px;color:var(--mut);border-top:1px solid var(--line)}
+.fab{position:fixed;bottom:18px;left:18px;background:#25d366;color:#fff;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:6}
+</style>
+</head>
+<body>
+<nav><b class="serif">ORA · LAUNCHES</b><a class="c" href="#reg">سجّل اهتمامك</a></nav>
+
+<header class="hero">
+<small class="serif">NEW LAUNCHES</small>
+<h1 class="serif">Reimagining Time</h1>
+<p>أحدث ٣ إطلاقات من أورا ديفلوبرز في مصر. أسعار البداية، الأقساط، ومعاينة فورية.</p>
+<a class="btn" href="#launches">شوف الإطلاقات</a>
+</header>
+
+<section id="launches">
+<h2 class="serif">Latest Launches</h2>
+<p class="sub">أحدث الإطلاقات بأسعار البداية المعلنة</p>
+<div class="grid">
+
+<div class="card">
+<div class="art a1"><span class="serif">NOW LAUNCHING</span><h3 class="serif">Gardinn</h3></div>
+<div class="body">
+<div class="loc">Solana East · القاهرة الجديدة</div>
+<p>شقق فندقية متشطبة بالكامل بإدارة أورا للضيافة، على طريق التسعين الجنوبي. ٩٨٪ من الوحدات بإطلالات خضراء.</p>
+<div class="kv">
+<div><span>غرفة نوم</span><b>من ٨.٩ مليون</b></div>
+<div><span>غرفتين</span><b>من ١٣.٩ مليون</b></div>
+<div><span>٣ غرف + غرفة خادمة</span><b>من ١٨ مليون</b></div>
+<div><span>السداد</span><b>٥٪ مقدم · حتى ٩ سنين</b></div>
+</div>
+<a class="m" href="#reg">اطلب التفاصيل</a>
+</div></div>
+
+<div class="card">
+<div class="art a2"><span class="serif">LAGOON · PROMENADE</span><h3 class="serif">Silver Bay &amp; Silver Walk</h3></div>
+<div class="body">
+<div class="loc">Silversands · الساحل الشمالي</div>
+<p>Silver Bay: كبائن على اللاجون مباشرة. Silver Walk: ممشى على المياه بمطاعم وكافيهات وشقق متشطبة بالتكييفات.</p>
+<div class="kv">
+<div><span>Silver Walk · غرفة نوم</span><b>من ٨.٩ مليون</b></div>
+<div><span>Silver Walk · ٣ غرف</span><b>من ٢٣ مليون</b></div>
+<div><span>Silver Bay · كابانا</span><b>من ١٥.٦ مليون</b></div>
+<div><span>السداد</span><b>٥٪ مقدم · حتى ٨ سنين</b></div>
+</div>
+<a class="m" href="#reg">اطلب التفاصيل</a>
+</div></div>
+
+<div class="card">
+<div class="art a3"><span class="serif">NEW PHASE</span><h3 class="serif">Village Views</h3></div>
+<div class="body">
+<div class="loc">ZED West · الشيخ زايد</div>
+<p>آخر أبراج ZED West، بإطلالة مباشرة على حديقة زد المركزية (٦٥ فدان) في قلب الشيخ زايد.</p>
+<div class="kv">
+<div><span>غرفة نوم</span><b>من ٩.٥ مليون</b></div>
+<div><span>غرفتين</span><b>من ١٦.٥ مليون</b></div>
+<div><span>٣ غرف</span><b>من ٢٢ مليون</b></div>
+<div><span>السداد</span><b>٥٪ مقدم · حتى ١٠ سنين</b></div>
+</div>
+<a class="m" href="#reg">اطلب التفاصيل</a>
+</div></div>
+
+</div>
+<p class="note">أسعار البداية حسب الإعلانات المنشورة وقت التحديث، وتتغير حسب الوحدة والدور والمساحة. اطلب الجدول الحالي.</p>
+</section>
+
+<section class="why" style="padding:70px 22px"><div class="in" style="max-width:1000px">
+<div><div class="n serif">٥٪</div><p>مقدم حجز في أغلب الإطلاقات</p></div>
+<div><div class="n serif">٩–١٠</div><p>سنين تقسيط حسب المشروع</p></div>
+<div><div class="n serif">٣</div><p>إطلاقات جديدة، أرقام محدودة</p></div>
+</div></section>
+
+<section id="reg">
+<h2 class="serif">Register Your Interest</h2>
+<p class="sub">سيب بياناتك وهنكلمك بالتفاصيل والأسعار الحالية</p>
+<div class="formwrap">
+<form id="f" novalidate>
+<div><label>الاسم</label><input name="entry.2108316533" autocomplete="name" placeholder="اسمك"></div>
+<div><label>رقم الموبايل *</label><input name="entry.1979713201" type="tel" inputmode="tel" autocomplete="tel" required placeholder="01xxxxxxxxx"></div>
+<div><label>نوع الوحدة</label><div class="units">
+<label><input type="radio" name="entry.1307640494" value="شقة"><span>شقة</span></label>
+<label><input type="radio" name="entry.1307640494" value="فيلا"><span>فيلا</span></label>
+<label><input type="radio" name="entry.1307640494" value="دوبلكس"><span>دوبلكس</span></label>
+<label><input type="radio" name="entry.1307640494" value="لسه بحدد"><span>لسه بحدد</span></label></div></div>
+<div><label>الميزانية التقريبية (جنيه)</label><input name="entry.609252050" inputmode="numeric" placeholder="مثال: 10,000,000"></div>
+<div class="err" id="err">اكتب رقم موبايل صحيح</div>
+<button class="btn" style="width:100%;margin-top:0" type="submit" id="sb">أرسل طلبك</button>
+<div class="wa">أو كلمنا على <a href="https://wa.me/201500062636?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%D8%8C%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D8%A5%D8%B7%D9%84%D8%A7%D9%82%D8%A7%D8%AA%20%D8%A3%D9%88%D8%B1%D8%A7%20%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9.%20%D9%85%D9%85%D9%83%D9%86%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%D8%9F">واتساب</a> · <a href="tel:+201500062636">٠١٥٠٠٠٦٢٦٣٦</a></div>
+</form>
+<div class="ok" id="ok">تم الاستلام ✅<br><span style="font-size:16px;color:var(--mut)">هنتواصل معاك قريباً</span></div>
+</div>
+</section>
+
+<footer>Abraam Hany · للحجز والاستفسار: <a href="https://wa.me/201500062636" style="color:var(--gold)">واتساب 01500062636</a><br>صفحة تسويقية مستقلة، وليست الموقع الرسمي لأورا ديفلوبرز.</footer>
+<a class="fab" href="https://wa.me/201500062636" aria-label="WhatsApp">✆</a>
+
+<script>
+var URL_="https://docs.google.com/forms/d/e/1FAIpQLScV9EPwGx02_61QbOzzY5iICqAdQTHfBji_AcjhD7eQ6TovPw/formResponse";
+document.getElementById("f").addEventListener("submit",function(e){
+ e.preventDefault();var f=e.target,ph=f.elements["entry.1979713201"].value.replace(/[^0-9+]/g,"");
+ if(ph.length<8){document.getElementById("err").style.display="block";return}
+ document.getElementById("err").style.display="none";
+ var b=document.getElementById("sb");b.disabled=true;b.textContent="جاري الإرسال...";
+ var d=new URLSearchParams(new FormData(f));
+ d.set("entry.2108316533","[ORA] "+(f.elements["entry.2108316533"].value||""));
+ fetch(URL_,{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:d.toString()})
+ .then(function(){f.style.display="none";document.getElementById("ok").style.display="block"})
+ .catch(function(){b.disabled=false;b.textContent="أرسل طلبك";var x=document.getElementById("err");x.textContent="حصل خطأ، جرّب واتساب";x.style.display="block"});
+});
+</script>
+</body></html>
